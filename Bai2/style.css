@@ -1,8 +1,156 @@
-h1 {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.float-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.mgt-3{
+    margin-top: 30px;
+}
+.mgr-1{
+    margin-right: 10px;
+}
+.mgb-1{
+    margin-bottom: 10px;
+}
+.mgr-3
+{
+    margin-right: 30px;
+}
+.color-black {
+    color: #000 !important;
+}.color-gray {
+    color: gray !important;
+}
+.text-line-through {
+    text-decoration-line: line-through;
+}
+
+.bg-blue-btn{
+    background-color: rgb(0, 0, 255);
+    opacity: 0.8;
+}
+.bg-red-btn{
+    background-color: rgb(255, 0, 0);
+    opacity: 0.8;
+}
+/*  */
+
+#title-header {
     text-align: center;
 }
 
-h1::after {
+#title-header::after {
     content: "Wellcome to program.";
     color: red;
+}
+/*  */
+
+.flex-container {
+    /* width: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    background-color: #fff;
+    width: 300px;
+    /* height: ; */
+    margin: 10px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.flex-container>div img {
+    width: inherit;
+}
+
+.flex-container .content {
+    padding: 10px 5%;
+}
+.content h1 {
+    opacity: 0.8;
+    font-size: 22px;
+}
+
+.item-size{
+    padding: 0 5px;
+    font-size: 13px;
+
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+.item-size:hover {
+    cursor: pointer;
+    background-color: rgb(160, 160, 160);
+}
+
+
+.money {
+    font-weight: 700; 
+    color: red;
+}
+.money::after{
+    content: "đ";
+    text-decoration-line: underline;
+    font-size: 13px;
+   margin-bottom: 5px;
+    margin-left: 5px;
+
+}
+
+.content-title{
+    background-color: rgba( 0, 0, 0, 0.1 );
+    padding: 10px 5px;
+    border-radius: 5px;
+    
+}
+.content-title>p {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.content-button {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+
+    color: #fff;
+
+}
+.btn:hover{
+    opacity: 1;
+
+    cursor: pointer;
+}
+
+/*  */
+
+#title-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+}
+
+#title-footer::after {
+    content: "Wellcome to program";
+    color: red;
+    
+    font-size: 25px;
 }
